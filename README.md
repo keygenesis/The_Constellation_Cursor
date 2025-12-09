@@ -34,7 +34,7 @@ DRM calls and rendering a custom vector cursor directly to the cursor plane. Bec
 
 ## Configuration File
 
-The library automatically creates and reads a config file at `~/.config/constellation/cursor.conf`. This file is created with default values on first run.
+The library automatically creates and reads a config file at `~/.config/constellation_cursor/cursor.conf`. This file is created with default values on first run.
 
 ### Config Options
 
