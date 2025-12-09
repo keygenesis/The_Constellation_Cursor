@@ -234,7 +234,7 @@ between the compossitor and the drm cursor plane.
 ```bash
 # Clone the repository
 git clone https://github.com/Mauitron/the_constellation_cursor
-cd drm_constellation_cursor
+cd the_constellation_cursor
 
 # Build release
 cargo build --release
@@ -256,7 +256,7 @@ LD_PRELOAD=/path/to/libthe_constellation_cursor.so Hyprland
 
 ```
 Add the above flag to your start command.
-LD_PRELOAD=/path/to/the/libdrm_constellation_cursor.so Hyprland
+LD_PRELOAD=/path/to/the/libthe_constellation_cursor.so Hyprland
 or replace 'Hyprland' with whatever compositor you are using
 
 ```
@@ -271,7 +271,7 @@ or replace 'Hyprland' with whatever compositor you are using
 Example:
 
 ```bash
-CONSTELLATION_CURSOR_INFO=1 LD_PRELOAD=./target/release/libdrm_constellation_cursor.so hyprland
+CONSTELLATION_CURSOR_INFO=1 LD_PRELOAD=./target/release/libthe_constellation_cursor.so hyprland
 ```
 
 Output:
@@ -324,7 +324,7 @@ The designer includes these presets:
 │   Sets cursor image ──────┐                                 │
 │                           ▼                                 │
 │   ┌─────────────────────────────────────────────────────┐   │
-│   │         libdrm_constellation_cursor.so              │   │
+│   │         libthe_constellation_cursor.so              │   │
 │   │                                                     │   │
 │   │  1. Intercepts drmModeAtomicAddProperty             │   │
 │   │  2. Detects cursor plane via "type" property        │   │
