@@ -11,7 +11,7 @@ Which allows for a true system cursor rendering without compositor involvement.
 Should works with any Wayland compositor using atomic modesetting.
 
 > **Note:** This is a somewhat hacky workaround that intercepts DRM calls.
-> Use at your own risk. See [Issues/Limitations](#issues_&_limitations) below.
+> Use at your own risk. See [Issues/Limitations](#issues-&-limitations) (out of order) look below.
 
 ## Why does this exist?
 
