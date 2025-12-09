@@ -1,0 +1,26 @@
+[package]
+name = "the_constellation_cursor"
+version = "0.1.0"
+edition = "2021"
+description = "A systems cursor rendered on the DRM hardware cursor plane"
+license = "MIT"
+repository = "https://github.com/Mauitron/The_Constellation_Cursor"
+keywords = ["cursor", "drm", "wayland", "vector", "ld-preload"]
+categories = ["graphics", "rendering"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[features]
+default = []
+# Enable full Constellation vector rendering (for Starwell builds)
+# constellation = ["dep:constellation-alternative"]
+
+[dependencies]
+libc = "0.2"
+# constellation-alternative = { path = "../..", optional = true }
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true
