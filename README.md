@@ -106,10 +106,10 @@ config_poll_interval=50
 
 ```bash
 # Edit with your preferred editor
-nano ~/.config/constellation/cursor.conf
+nano ~/.config/constellation_cursor/cursor.conf
 
 # Or use sed for quick changes
-sed -i 's/fade_enabled=false/fade_enabled=true/' ~/.config/constellation/cursor.conf
+sed -i 's/fade_enabled=false/fade_enabled=true/' ~/.config/constellation_cursor/cursor.conf
 ```
 
 **Note:** By default, config changes are detected automatically when you save the file - just move the cursor and the new settings apply. No restart needed.
