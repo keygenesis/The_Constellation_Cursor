@@ -4,6 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Rust](https://img.shields.io/badge/Rust-1.70%2B-orange.svg)](https://www.rust-lang.org/)
+![Status](https://img.shields.io/badge/Status-Beta-yellow)
 
 A Rust LD_PRELOAD library that renders a vector cursor directly on the DRM hardware cursor plane.
 Which allows for a true system cursor rendering without compositor involvement. 
