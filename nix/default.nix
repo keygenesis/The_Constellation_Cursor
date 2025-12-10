@@ -1,15 +1,10 @@
-{ pkgs }:
+{ pkgs, src ? ./. }:
 
 pkgs.rustPlatform.buildRustPackage rec {
   pname = "the-constellation-cursor";
   version = "0.1.0";
 
-  src = pkgs.fetchFromGitHub {
-    owner = "keygenesis";
-    repo  = "The_Constellation_Cursor";
-    rev   = "main";
-    sha256 = "sha256-0sz8f0av3dsx67ca8hdkrd16lg0d11vra5sri62diq5hrh9jpkfd";
-  };
+  inherit src; 
 
   cargoLock = {
     lockFile = "${src}/Cargo.lock";
