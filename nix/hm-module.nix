@@ -41,6 +41,6 @@ in
     home.file.".config/constellation_cursor/cursor.conf".text = configFile;
 
   home.sessionVariables.LD_PRELOAD =
-    "${constellationCursorPkg}/lib/libthe_constellation_cursor.so";
+    "${pkgs.the-constellation-cursor}/lib/libthe_constellation_cursor.so";
   };
 }
