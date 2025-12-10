@@ -1,5 +1,5 @@
 {
-  description = "The Constellation Cursor (LD_PRELOAD vector cursor renderer)";
+  description = "The Constellation Cursor";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -37,7 +37,7 @@
       );
 
       homeManagerModules = {
-        constellation-cursor = import ./nix/hm-constellation-cursor.nix;
+        constellation-cursor = import ./nix/hm-module.nix;
       };
     };
 }
