@@ -20,6 +20,11 @@ in
   options.programs.constellation-cursor = {
     enable = lib.mkEnableOption "Enable Constellation Cursor";
 
+    package = lib.mkOption {
+          type = lib.types.package;
+          description = "The Constellation Cursor package used for LD_PRELOAD.";
+        };
+
     settings = lib.mkOption {
       type = lib.types.attrs;
       default = {
