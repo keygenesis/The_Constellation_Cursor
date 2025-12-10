@@ -36,7 +36,7 @@
         }
       );
 
-homeManagerModules.defau = { config, lib, pkgs, ... }:
+homeManagerModules.default = { config, lib, pkgs, ... }:
   import ./nix/hm-module.nix;
  };
 }
